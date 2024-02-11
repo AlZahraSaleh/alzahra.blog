@@ -1,0 +1,156 @@
+/* Post Page Design */
+.postone-content {
+    align-items: center;
+    padding: 10px;
+    padding-bottom: 100px;
+    margin: 10px;
+}
+
+.head-title {
+    font-size: 1.8em;
+    text-align: left;
+    color: #4F709C;
+    padding: 5px;
+    margin: 1px;
+}
+
+.postone-authorinfo {
+    padding: 10px;
+    margin: 10px;
+}
+
+.quote-content {
+    display: flex;
+    justify-content: center;
+}
+
+figure {
+    width: 350px;
+}
+
+.img-quote {
+    width: 350px;
+    height: 280px;
+}
+
+.quote-text {
+    color: #4F709C;
+    background: white;
+    text-align: center;
+    padding: 5px;
+}
+
+article {
+    color: #213555;
+    font-size: large;
+    line-height: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.social-text {
+    color: #4F709C;
+    border-bottom: 2px solid #4F709C;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 30px;
+}
+
+/* icon style */
+#soso {
+    color: #213555;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #4F709C;
+    border-radius: 0.2rem;
+}
+
+
+/* MEDIA QUERIES */
+@media(min-width: 511px) and (max-width: 750px) {
+    figure {
+        width: 350px;
+    }
+    
+    .img-quote {
+        width: 350px;
+        height: 300px;
+    }
+}
+
+@media(min-width: 410px) and (max-width: 510px) {
+    .quote-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .head-title {
+        font-size: 1.2em;
+    }
+
+    .postone-authorinfo {
+        padding: 5px;
+        margin: 5px;
+    }
+
+    figure {
+        width: 250px;
+    }
+   
+    .img-quote {
+        width: 250px;
+        height: 200px;
+    }
+}
+
+@media(max-width: 409px) {
+    .quote-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .head-title {
+        font-size: 1.2em;
+    }
+
+    .postone-authorinfo {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    figure {
+        width: 170px;
+    }
+   
+    .img-quote {
+        width: 170px;
+        height: 120px;
+    }
+
+    article {
+        font-size: medium;
+        line-height: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .social-text {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .social {
+        padding-left: 15px;
+    }
+}

@@ -1,0 +1,112 @@
+/* Recent Post Cards Design */
+.re-post-cover {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.post-title {
+    font-size: 2em;
+    color: #4F709C;
+    padding: 5px;
+    padding-left: 50px;
+    margin: 1px;
+}
+
+.post-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #4F709C;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 1rem;
+}
+
+.img-postone {
+    width: 295px;
+    height: 250px;
+    padding: 10px;
+    margin: 1px;
+}
+
+.post {
+    background: #213555;
+    color: #F0F0F0;
+    height: 250px;
+    width: 310px;
+    border-radius: 1rem;
+    padding: 10px;
+    margin: 1px;
+}
+
+.postone {
+    text-decoration: none;
+    font-weight: bolder;
+    color: #ffffff;
+}
+
+.btu {
+    float: right;
+    background: #E5D283;
+    text-decoration: none;
+    color:#213555;
+    border: 1px soild transparent;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+}
+
+.btu:hover {
+    background: #F0F0F0;
+}
+
+.post a:hover {
+    color: #4F709C;
+}
+
+/* MEDIA QUERIES */
+@media(min-width: 1270px) {
+    .post-content {
+        width: 700px;
+    }
+}
+
+@media(min-width: 451px) and (max-width: 750px) {
+    .re-post-cover {
+        align-items: center;
+    }
+
+    .post-content {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 450px) {
+    .re-post-cover {
+        align-items: center;
+    }
+
+    .post-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .img-postone {
+        width: 200px;
+        height: 150px;
+    }
+
+    .post {
+        width: 200px;
+        height: 280px;
+    }
+
+    .postone {
+        font-size: small;
+    }
+
+    .shown-text {
+        font-size: smaller;
+    }
+}

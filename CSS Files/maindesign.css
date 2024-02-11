@@ -1,0 +1,27 @@
+@import url(repocard.css);
+@import url(postpage.css);
+@import url(contact.css);
+
+.main {
+    display: grid;
+    grid-area: main;
+    justify-content: center;
+    padding: 2px;
+    margin: 1px;
+    padding-bottom: 100px;
+}
+
+.main-title {
+    font-size: 2em;
+    text-align: center;
+    color: #4F709C;
+    padding: 5px;
+    margin: 1px;
+}
+
+/* icon style */
+#fafa {
+    color: black;
+    letter-spacing: 3px;
+    font-size: 10px;
+}

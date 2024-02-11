@@ -1,0 +1,36 @@
+@import url(headerdesign.css);
+@import url(sidebardesign.css);
+@import url(maindesign.css);
+@import url(footerdesign.css);
+
+
+body {
+    display: grid;
+    grid-template-areas:
+    "hd hd hd hd hd hd hd hd hd"
+    "main main main main main main main sd sd"
+    "ft ft ft ft ft ft ft ft ft";
+    font-family: Arial, Helvetica, sans-serif;
+    background: #F0F0F0;
+}
+
+/* MEDIA QUERIES */
+@media(min-width: 451px) and (max-width: 900px) {
+    body {
+        grid-template-areas:
+        "hd hd hd hd hd hd"
+        "sd sd sd sd sd sd"
+        "main main main main main main"
+        "ft ft ft ft ft ft";
+    }
+}
+
+@media(max-width: 450px) {
+    body {
+        grid-template-areas:
+        "hd hd hd"
+        "sd sd sd"
+        "main main main"
+        "ft ft ft";
+    }
+}
